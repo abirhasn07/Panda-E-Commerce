@@ -27,10 +27,25 @@
 		<!-- FONT AWESOME LINK  -->
 		<link rel="stylesheet" href="./css/style.css" />
 
-  
-    <!-- FAVICON  -->
-  <link rel="shortcut icon" href="./images/shopping.png" type="image/x-icon">
-    <!-- FAVICON  -->
+		<!-- FAVICON  -->
+		<link
+			rel="shortcut icon"
+			href="./images/shopping.png"
+			type="image/x-icon"
+		/>
+		<!-- FAVICON  -->
+
+		<!-- SWIPER JS CDN  -->
+		<script
+		src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+		defer
+		></script>
+		<!-- SWIPER JS CDN  -->
+		<script src="./js/script.js" defer></script>
+		<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 	</head>
 
 	<body>
@@ -62,90 +77,46 @@
 							<li class="nav-item fs-4">
 								<a class="nav-link" href="#">Backpacks</a>
 							</li>
-							
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
 
-		<!-- background section start -->
+		<!-- Hero section start -->
 
 		<section class="container mt-5">
-			<div
-				id="carouselExampleControls"
-				class="carousel slide"
-				data-bs-ride="carousel"
-			>
-				<div class="carousel-inner">
-					<div class="carousel-item active slider">
-						<div class="row d-flex align-items-center hero-info">
-							<div class="col-md-7 ml-4">
-								<h1 class="mt-5 title">Samsung LED TV</h1>
-								<h5 class="fs-6 col-10 subtitle">
-									This is the best tv in the world for people who just want to
-									waste time in front of tv.
-								</h5>
-
-								<button type="button" class="btn btn-primary btn-lg">
-									Buy Now
-								</button>
-							</div>
-							<div class="col-md-5">
-								<img
-									src="https://static.digit.in/product/bf6e3444c161bc8728b635b4a5f406b519b57ed8.jpeg?tr=w-1200"
-									class="d-block w-100"
-									alt="..."
-								/>
-							</div>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="slider-info">
+							<h1 class="fs-2">Samsung LED TV</h1>
+							<p class="fs-5">This is the best tv in the world for people who just want to waste time in front of tv.</p>
+							<button class="btn btn-primary btn-lg">Explore Now</button>
+						</div>
+						<div>
+							<img src="https://static.digit.in/product/bf6e3444c161bc8728b635b4a5f406b519b57ed8.jpeg?tr=w-1200" alt="">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div>
+							<h1 class="fs-2">Baseus Headphone</h1>
+							<p class="fs-5">This is the best tv in the world for people who just want to waste time in front of tv.</p>
+							<button class="btn btn-primary btn-lg">Explore Now</button>
+						</div>
+						<div>
+							<img src="https://static.insales-cdn.com/images/products/1/2094/564398126/NGD02-C02_white_6.jpg" alt="">
 						</div>
 					</div>
 					
-					<div class="carousel-item slider">
-						<div class="row d-flex align-items-center hero-info">
-							<div class="col-md-7">
-								<h1 class="title">
-                  Baseus Headphone</h1>
-								<h5 class="fs-6 col-10 subtitle">
-									This is the best headphone in the world for people who just
-									want to waste time in front of funky world
-								</h5>
-
-								<button type="button" class="btn btn-primary btn-lg">
-									Buy Now
-								</button>
-							</div>
-							<div class="col-md-5">
-								<img
-									src="https://static.insales-cdn.com/images/products/1/2094/564398126/NGD02-C02_white_6.jpg"
-									class="d-block w-100"
-									alt="..."
-								/>
-							</div>
-						</div>
-					</div>
 				</div>
-				<a
-					class="carousel-control-prev"
-					href="#carouselExampleControls"
-					role="button"
-					data-bs-slide="prev"
-				>
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</a>
-				<a
-					class="carousel-control-next"
-					href="#carouselExampleControls"
-					role="button"
-					data-bs-slide="next"
-				>
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</a>
+				
+				<div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
 			</div>
 		</section>
-		<!-- background section end -->
+		<!-- hero section end -->
 
 		<!-- main section start here  -->
 
@@ -317,7 +288,9 @@
 		>
 			<div>
 				<h2 class="text-white text-center">LET'S STAY IN TOUCH</h2>
-				<h5 class="text-white text-center">Get updates on sales, specials and more</h5>
+				<h5 class="text-white text-center">
+					Get updates on sales, specials and more
+				</h5>
 				<div class="d-flex justify-content-center align-items-center">
 					<span style="color: white; font-size: 24px; margin-inline: 0.5rem"
 						><i class="fa-brands fa-facebook"></i
