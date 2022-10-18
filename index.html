@@ -1,274 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Panda E Commerce</title>
+		<script src="js/bootstrap.min.js" defer></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Panda E Commerce</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-</head>
+		<!-- GOOGLE FONTS  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- GOOGLE FONTS  -->
 
-<body>
-  <header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Backpacks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Subscribe</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+		<!-- FONT AWESOME LINK  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- FONT AWESOME LINK  -->
+		<link rel="stylesheet" href="./css/style.css" />
 
-  <!-- background section start -->
+  
+    <!-- FAVICON  -->
+  <link rel="shortcut icon" href="./images/shopping.png" type="image/x-icon">
+    <!-- FAVICON  -->
+	</head>
 
-  <section class="container mt-5">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-7">
-             
-                <h1 class="mt-5">Mega LCD TV For Sports</h1>
-              <h5>
-                This is the best tv in the world for people who just want to
-                waste time in front of tv.
-              </h5>
-              <h2 class="text-warning">$1200</h2>
-              <button type="button" class="btn btn-info">Buy Now</button>
-              
-            </div>
-            <div class="col-md-5">
-              <img src="images/banner-images/tv.png" class="d-block w-100" alt="..." />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-7">
-             
-                <h1>X-Box</h1>
-              <h5 class="col-md-10">
-                This is the best headphone in the world for people who just
-                want to waste time in front of funky world
-              </h5>
-              <button class="btn btn-danger">Buy Now >>></button>
-              
-            </div>
-            <div class="col-md-5">
-              <img src="images/banner-images/xbox.png" class="d-block w-100" alt="..." />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-7 ">
-             
-              <h1>Cool Dude Headphone</h1>
-              <h5 class="col-md-10">
-                This is the best headphone in the world for people who just
-                want to waste time in front of funky world
-              </h5>
-              
-              <button class="btn btn-danger">Buy Now >>></button>
-             
-            </div>
-            <div class="col-md-5">
-              <img src="images/banner-images/headphone.png" class="d-block w-100" alt="..." />
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </a>
-    </div>
-  </section>
-  <!-- background section end -->
+	<body>
+		<header class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-lg d-flex justify-content-between">
+					<a class="navbar-brand col-5" href="#">
+						<img src="images/logo.png" alt="" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse col-lg-5" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item fs-4">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item fs-4">
+								<a class="nav-link" href="#">Shoes</a>
+							</li>
+							<li class="nav-item fs-4">
+								<a class="nav-link" href="#">Backpacks</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-  <!-- main section start here  -->
+		<!-- background section start -->
 
-  <section class="container mt-5">
-    <div class="container overflow-hidden">
-      <div class="row gx-5 mt-5">
-        <div class="col md-4">
-          <div class="p-3 bg-danger rounded-3 d-flex align-items-center justify-content-around">
-            <h1 class="text-light">Watch</h1>
-            <img src="images/categories/watch.png" alt="" />
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3 bg-warning rounded-3 d-flex align-items-center justify-content-around">
-            <h1 class="text-white">Bag</h1>
-            <img src="images/categories/bag.png" alt="" />
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3 bg-success rounded-3 d-flex align-items-center justify-content-center">
-            <h1 class="text-white">Shoes</h1>
-            <img src="images/categories/shoes.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+		<section class="container mt-5">
+			<div
+				id="carouselExampleControls"
+				class="carousel slide"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active slider">
+						<div class="row d-flex align-items-center hero-info">
+							<div class="col-md-7 ml-4">
+								<h1 class="mt-5 title">Samsung LED TV</h1>
+								<h5 class="fs-6 col-10 subtitle">
+									This is the best tv in the world for people who just want to
+									waste time in front of tv.
+								</h5>
 
-  <!-- main section end here  -->
+								<button type="button" class="btn btn-primary btn-lg">
+									Buy Now
+								</button>
+							</div>
+							<div class="col-md-5">
+								<img
+									src="https://static.digit.in/product/bf6e3444c161bc8728b635b4a5f406b519b57ed8.jpeg?tr=w-1200"
+									class="d-block w-100"
+									alt="..."
+								/>
+							</div>
+						</div>
+					</div>
+					
+					<div class="carousel-item slider">
+						<div class="row d-flex align-items-center hero-info">
+							<div class="col-md-7">
+								<h1 class="title">
+                  Baseus Headphone</h1>
+								<h5 class="fs-6 col-10 subtitle">
+									This is the best headphone in the world for people who just
+									want to waste time in front of funky world
+								</h5>
 
-  <!-- Cart section start here -->
+								<button type="button" class="btn btn-primary btn-lg">
+									Buy Now
+								</button>
+							</div>
+							<div class="col-md-5">
+								<img
+									src="https://static.insales-cdn.com/images/products/1/2094/564398126/NGD02-C02_white_6.jpg"
+									class="d-block w-100"
+									alt="..."
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev"
+					href="#carouselExampleControls"
+					role="button"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next"
+					href="#carouselExampleControls"
+					role="button"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</a>
+			</div>
+		</section>
+		<!-- background section end -->
 
-  <section class="mt-5 container">
-    <h3>Shoes</h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100 shadow-lg">
-          <img src="images/shoes/shoe-1.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Supply 350</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional.
-            </p>
-          </div>
-          <div class="card-footer">
-            <h5>$120</h5>
-            <button type="button" class="btn btn-primary">Buy Now > ></button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-lg">
-          <img src="images/shoes/shoe-2.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Nike 360</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional.
-            </p>
-          </div>
-          <div class="card-footer">
-            <h5>$120</h5>
-            <button type="button" class="btn btn-primary">Buy Now > ></button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-lg">
-          <img src="images/shoes/shoe-3.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Red Airmax</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates, laudantium?.
-            </p>
-          </div>
-          <div class="card-footer">
-            <h5>$120</h5>
-            <button type="button" class="btn btn-primary">Buy Now > ></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+		<!-- main section start here  -->
 
-  <!-- Cart section end here -->
+		<section class="container mt-5">
+			<div class="container overflow-hidden">
+				<div class="row gx-5 mt-5 categories">
+					<div class="col md-4">
+						<div
+							class="p-3 bg-danger rounded-3 d-flex align-items-center justify-content-around"
+						>
+							<h1 class="text-light">Watch</h1>
+							<img src="images/categories/watch.png" alt="" />
+						</div>
+					</div>
+					<div class="col">
+						<div
+							class="p-3 bg-warning rounded-3 d-flex align-items-center justify-content-around"
+						>
+							<h1 class="text-white">Bag</h1>
+							<img src="images/categories/bag.png" alt="" />
+						</div>
+					</div>
+					<div class="col">
+						<div
+							class="p-3 bg-success rounded-3 d-flex align-items-center justify-content-center"
+						>
+							<h1 class="text-white">Shoes</h1>
+							<img src="images/categories/shoes.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!-- bakcpacks section start here  -->
+		<!-- main section end here  -->
 
-  <section class="mt-5 container">
-    <h3>Shoes</h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100 shadow-lg">
-          <img src="images/bags/bag-1.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Red Laltu Bag</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional.
-            </p>
-          </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-primary">Buy Now > ></button>
-            <h5>$380</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-lg">
-          <img src="images/bags/bag-2.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Blue Niltu Bag</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional.
-            </p>
-          </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-primary">Buy Now > ></button>
-            <h5>$520</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-lg">
-          <img src="images/bags/bag-3.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Black Niltu Bag</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates, laudantium?.
-            </p>
-          </div>
-          <div class="card-footer">
-            <button type="button" class="btn btn-primary">Buy Now > ></button>
-            <h5>$120</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+		<!-- Cart section start here -->
 
-  <!-- bakcpacks section end here  -->
+		<section class="mt-5 container">
+			<h3>Shoes</h3>
+			<div class="row row-cols-1 row-cols-md-3 g-4 gx-sm-4">
+				<div class="col">
+					<div class="card h-100 shadow-lg">
+						<img src="images/shoes/shoe-1.png" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Supply 350</h5>
+							<p class="card-text">
+								This is a longer card with supporting text below as a natural
+								lead-in to additional.
+							</p>
+						</div>
+						<div
+							class="card-footer d-flex justify-content-between align-items-center"
+						>
+							<h5>$120</h5>
+							<button type="button" class="btn btn-primary">Buy Now</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 shadow-lg">
+						<img src="images/shoes/shoe-2.png" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Nike 360</h5>
+							<p class="card-text">
+								This is a longer card with supporting text below as a natural
+								lead-in to additional.
+							</p>
+						</div>
+						<div
+							class="card-footer d-flex justify-content-between align-items-center"
+						>
+							<h5>$120</h5>
+							<button type="button" class="btn btn-primary">Buy Now</button>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 shadow-lg">
+						<img src="images/shoes/shoe-3.png" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Red Airmax</h5>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Voluptates, laudantium?.
+							</p>
+						</div>
+						<div
+							class="card-footer d-flex justify-content-between align-items-center"
+						>
+							<h5>$120</h5>
+							<button type="button" class="btn btn-primary">Buy Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!-- Form Section Start Here  -->
-  <section style="height: 300px"
-    class="d-flex align-items-center justify-content-center mt-5 bg-dark container rounded-3">
-    <div>
-      <h2 class="text-white">LET'S STAY IN TOUCH</h2>
-      <h5 class="text-white">Get updates on sales, specials and more</h5>
-      <input type="email" name="" id="" placeholder="Enter Your Email Please !" class="border-1" /><br />
-      <button type="button" class="btn btn-primary mt-3">Submit</button>
-    </div>
-  </section>
+		<!-- Cart section end here -->
 
-  <!-- Form Section End Here  -->
+		<!-- bakcpacks section start here  -->
 
-  <script src="js/bootstrap.min.js"></script>
-</body>
+		<section class="mt-5 container">
+			<h3>Backpacks</h3>
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card h-100 shadow-lg">
+						<img src="images/bags/bag-1.png" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Red Laltu Bag</h5>
+							<p class="card-text">
+								This is a longer card with supporting text below as a natural
+								lead-in to additional.
+							</p>
+						</div>
+						<div
+							class="card-footer d-flex justify-content-between align-items-center"
+						>
+							<button type="button" class="btn btn-primary">Buy Now</button>
+							<h5>$380</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 shadow-lg">
+						<img src="images/bags/bag-2.png" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Blue Niltu Bag</h5>
+							<p class="card-text">
+								This is a longer card with supporting text below as a natural
+								lead-in to additional.
+							</p>
+						</div>
+						<div
+							class="card-footer d-flex justify-content-between align-items-center"
+						>
+							<button type="button" class="btn btn-primary">Buy Now</button>
+							<h5>$520</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 shadow-lg">
+						<img src="images/bags/bag-3.png" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title fw-bold">Black Niltu Bag</h5>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Voluptates, laudantium?.
+							</p>
+						</div>
+						<div
+							class="card-footer d-flex justify-content-between align-items-center"
+						>
+							<button type="button" class="btn btn-primary">Buy Now</button>
+							<h5>$120</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<!-- bakcpacks section end here  -->
+
+		<!-- Form Section Start Here  -->
+		<section
+			style="height: 300px"
+			class="d-flex align-items-center justify-content-center mt-5 bg-dark container rounded-3"
+		>
+			<div>
+				<h2 class="text-white text-center">LET'S STAY IN TOUCH</h2>
+				<h5 class="text-white text-center">Get updates on sales, specials and more</h5>
+				<div class="d-flex justify-content-center align-items-center">
+					<span style="color: white; font-size: 24px; margin-inline: 0.5rem"
+						><i class="fa-brands fa-facebook"></i
+					></span>
+					<span style="color: white; font-size: 24px; margin-inline: 0.5rem"
+						><i class="fa-brands fa-instagram"></i
+					></span>
+					<span style="color: white; font-size: 24px; margin-inline: 0.5rem"
+						><i class="fa-brands fa-twitter"></i
+					></span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Form Section End Here  -->
+	</body>
 </html>
